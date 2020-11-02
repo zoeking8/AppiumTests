@@ -1,14 +1,9 @@
-﻿using CalculatorAutomationWinappDriver;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.Appium.Windows;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading;
-using System.Threading.Tasks;
 
-namespace AppiumTests
+namespace AppiumTests.Calculator
 {
 	[TestClass]
 	public class Addition : Calculator

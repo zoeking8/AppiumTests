@@ -1,12 +1,9 @@
 ﻿using System;
-using System.Threading;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Appium;
 using OpenQA.Selenium.Appium.Windows;
-using OpenQA.Selenium.Remote;
 
-namespace CalculatorAutomationWinappDriver
+namespace AppiumTests.Calculator
 {
     public class Calculator
     {
