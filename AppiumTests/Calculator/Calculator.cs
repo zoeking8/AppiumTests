@@ -21,10 +21,10 @@ namespace AppiumTests.Calculator
         {
             if (calSession == null)
             {
-                AppiumOptions opt = new AppiumOptions();
-                opt.AddAdditionalCapability("app", calApp);
-                opt.AddAdditionalCapability("deviceName", "WindowsPC");
-                calSession = new WindowsDriver<WindowsElement>(new Uri(appiumDriverURI), opt);
+                AppiumOptions options = new AppiumOptions();
+                options.AddAdditionalCapability("app", calApp);
+                options.AddAdditionalCapability("deviceName", "WindowsPC");
+                calSession = new WindowsDriver<WindowsElement>(new Uri(appiumDriverURI), options);
                 Assert.IsNotNull(calSession);
 
                 calSession.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(1.5);
